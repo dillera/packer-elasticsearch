@@ -1,0 +1,7 @@
+{
+    "aws_region": "eu-west-1",
+    "aws_source_ami": "ami-d41d58a7",
+    "aws_instance_type": "m3.large",
+    "aws_vpc_id": "vpc-8a2d06ef",
+    "aws_subnet_id": "subnet-31952955"
+}

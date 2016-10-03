@@ -1,0 +1,7 @@
+{
+    "aws_region": "ap-southeast-1",
+    "aws_source_ami": "ami-7243e611",
+    "aws_instance_type": "m3.medium",
+    "aws_vpc_id": "vpc-78252d1d",
+    "aws_subnet_id": "subnet-d922e4bd"
+}

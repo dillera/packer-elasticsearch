@@ -3,3 +3,4 @@ boxes/*
 *.pem
 packer_vars*.json
 variables.json
+*vars.json
