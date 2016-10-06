@@ -9,7 +9,7 @@
     "aws_instance_type": "t2.medium",
     "aws_vpc_id": "",
     "aws_subnet_id": "",
-    "ami_name_prefix": "elasticsearch",
+    "ami_name_prefix": "es",
     "elastic_version": "2.3.5",
     "consul_version": "0.6.3",
     "consul_template_version": "0.12.1"
@@ -25,7 +25,7 @@
     "ssh_username": "ec2-user",
     "vpc_id": "{{user `aws_vpc_id`}}",
     "subnet_id": "{{user `aws_subnet_id`}}",
-    "ami_name": "{{user `ami_name_prefix`}}-{{timestamp}}",
+    "ami_name": "{{user `ami_name_prefix`}}_{{user `elastic_version`}}-consul_{{user `consul_version`}}-{{timestamp}}",
     "ami_regions": "{{user `aws_build_regions`}}",
     "ssh_pty": "true",
     "ssh_timeout": "10m"
@@ -39,6 +39,11 @@
     {
       "type": "shell",
       "script": "scripts/java.sh",
+      "execute_command": "echo 'ec2-user' | {{ .Vars }} sudo -E -S sh '{{ .Path }}'"
+    },
+    {
+      "type": "shell",
+      "script": "scripts/cloudwatch-agent.sh",
       "execute_command": "echo 'ec2-user' | {{ .Vars }} sudo -E -S sh '{{ .Path }}'"
     },
     {
