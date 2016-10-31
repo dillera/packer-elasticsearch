@@ -56,11 +56,11 @@ After packer gives you the new AMI ID per DC, you'll want to [update the AMI ID 
 * aws_region (defaults to `ap-southeast-2`)
 * aws_instance_type (defaults to `t2.medium`)
 * ami_name_prefix (defaults to `elasticsearch`)
-* elastic_version (defaults to `2.3.5`)
+* elastic_version (defaults to `2.4.1`)
 * aws_build_regions (defaults to none)
 * aws_instance_type (defaults to `t2.medium`)
 * aws_vpc_id (defaults to none)
 * aws_subnet_id (defaults to none)
-* consul_version (defaults to `0.6.3`)
+* consul_version (defaults to `0.6.4`)
 * consul_template_version (defaults to `0.12.1`)
 
