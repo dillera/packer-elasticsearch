@@ -10,8 +10,8 @@
     "aws_vpc_id": "",
     "aws_subnet_id": "",
     "ami_name_prefix": "es",
-    "elastic_version": "2.3.5",
-    "consul_version": "0.6.3",
+    "elastic_version": "2.4.1",
+    "consul_version": "0.6.4",
     "consul_template_version": "0.12.1"
   },
   "builders": [{
