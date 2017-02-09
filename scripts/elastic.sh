@@ -3,7 +3,7 @@
 set -e
 
 cd /tmp
-curl -L -o elastic.rpm https://download.elasticsearch.org/elasticsearch/release/org/elasticsearch/distribution/rpm/elasticsearch/${ELASTIC_VERSION}/elasticsearch-${ELASTIC_VERSION}.rpm
+curl -L -o elastic.rpm https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-${ELASTIC_VERSION}.rpm
 sudo rpm -Uvh elastic.rpm
 rm elastic.rpm
 
