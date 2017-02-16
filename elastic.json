@@ -11,7 +11,7 @@
     "aws_subnet_id": "",
     "ami_name_prefix": "es",
     "elastic_version": "2.4.4",
-    "consul_version": "0.7.4",
+    "consul_version": "0.7.5",
     "consul_template_version": "0.18.1"
   },
   "builders": [{
